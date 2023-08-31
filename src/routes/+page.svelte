@@ -1,5 +1,8 @@
 <script>
 	import SkillBadge from '$lib/components/skill-badge.svelte';
+	import StepDescription from '$lib/components/step/step-description.svelte';
+	import StepTitle from '$lib/components/step/step-title.svelte';
+	import Step from '$lib/components/step/step.svelte';
 </script>
 
 <main class="flex-1">
@@ -151,6 +154,80 @@
 					</li>
 				</ul>
 			</section>
+		</div>
+	</section>
+	<section class="px-6 py-24 sm:py-32 lg:px-8 flex flex-col items-center">
+		<header class="mx-auto max-w-2xl text-center mb-16">
+			<p class="text-base font-semibold leading-7 text-emerald-500">How it works</p>
+			<h2 class="mt-2 text-4xl font-bold tracking-tight text-white sm:text-6xl">
+				From idea to launch
+			</h2>
+			<p class="mt-6 text-lg leading-8 text-gray-100">
+				Diving into the layers of web development, detailing each step that nurtures your idea into
+				the reality of an engaging, functional website Launch.
+			</p>
+		</header>
+		<div aria-label="Progress" class="max-w-2xl">
+			<ol role="list" class="overflow-hidden">
+				<li class="relative pb-10">
+					<Step number="1">
+						<StepTitle>Initial Consultation</StepTitle>
+						<StepDescription
+							>I invite you to share the details of your project during a complimentary 30-minute
+							consultation call.</StepDescription
+						>
+					</Step>
+				</li>
+				<li class="relative pb-10">
+					<Step number="2">
+						<StepTitle>Proposal: Costs and Launch Date</StepTitle>
+						<StepDescription
+							>Following the consultation, I will diligently assess your project's requirements.
+							Within 5 working days, you will receive a comprehensive fixed-price offer and a
+							proposed launch date.</StepDescription
+						>
+					</Step>
+				</li>
+				<li class="relative pb-10">
+					<Step number="3">
+						<StepTitle>Development Commences</StepTitle>
+						<StepDescription
+							>Upon your approval, our team initiates the project's development phase. Throughout
+							this stage, I ensure regular updates on the progress for transparency and effective
+							communication.</StepDescription
+						>
+					</Step>
+				</li>
+				<li class="relative pb-10">
+					<Step number="4">
+						<StepTitle>Feedback & Refinement</StepTitle>
+						<StepDescription
+							>Upon the project's completion, I will deliver the finished product to you. I highly
+							value your input and will promptly accommodate any adjustments or refinements based on
+							your feedback.</StepDescription
+						>
+					</Step>
+				</li>
+				<li class="relative pb-10">
+					<Step number="5">
+						<StepTitle>Project Launch</StepTitle>
+						<StepDescription
+							>Your satisfaction is of utmost importance to us. Once the final product meets your
+							expectations, I will initiate the project launch.</StepDescription
+						>
+					</Step>
+				</li>
+				<li class="relative pb-10">
+					<Step number="6" isLast>
+						<StepTitle>Ongoing Support & Success</StepTitle>
+						<StepDescription
+							>Our commitment to your project's success doesn't end with the launch. I provide
+							ongoing support for further development, addressing any potential bugs, and ensuring
+							smooth maintenance to guarantee a thriving digital presence.</StepDescription
+						>
+					</Step>
+				</li>
+			</ol>
 		</div>
 	</section>
 </main>
