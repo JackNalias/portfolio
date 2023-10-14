@@ -1,1 +1,1 @@
-<span class="text-xl font-medium text-gray-100"><slot /></span>
+<span class="text-xl font-medium text-gray-200"><slot /></span>
